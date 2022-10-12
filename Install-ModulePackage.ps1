@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param()
 try {
-  $MName = Split-Path $PSScriptRoot -Leaf
+  $MName = Split-Path (Split-Path $PSScriptRoot -Parent) -Leaf
   Write-Verbose "module: $MName"
   $metadata = Get-Content -Raw -Path "$PSScriptRoot\metadata.json" -ErrorAction SilentlyContinue | ConvertFrom-Json
   $MVersion = $metadata.version
