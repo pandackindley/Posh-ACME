@@ -8,6 +8,8 @@ trigger:
     include:
       - Posh-ACME/*
       - azure-pipelines.yml
+      - Install-ModulePackage.ps1
+      - metadata.json
 
 pr: 
   - 'main'
