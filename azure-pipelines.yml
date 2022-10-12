@@ -17,7 +17,7 @@ resources:
     - repository: mecm-deployment
       endpoint: 'GHE-UMN'
       type: githubenterprise
-      name: oit-hosting/mecm-deployment
+      name: 'oit-hosting/mecm-deployment'
 
 stages:
 - template: azure-pipelines.yml@mecm-deployment
